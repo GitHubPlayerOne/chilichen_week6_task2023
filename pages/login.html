@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="container" style="height: calc(100vh - 255px);">
+      <div class="row justify-content-center mt-7 mt-lg-14">
+        <div class="col-lg-4">
+          <img src="../assets/images/sparkler.png" class="d-block m-auto mb-5" width="32px" height="32px" alt="icon">
+          <h2 class="fs-5 text-center noto-sans-serif">會員登入</h2>
+          <form class="mt-5">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label noto-sans-tc">帳號</label>
+              <input type="email" class="form-control noto-sans-tc fs-lg-7 border-secondary border-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入帳號">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label noto-sans-tc">密碼</label>
+              <input type="password" class="form-control noto-sans-tc fs-lg-7 border-secondary border-2" id="exampleInputPassword1" placeholder="請輸入密碼">
+            </div>
+            
+            <button type="submit" class="btn btn-secondary p-0 w-100 py-5 py-lg-2 fs-8 fs-lg-7 noto-sans-tc mt-3 mt-lg-6">登入 &raquo;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

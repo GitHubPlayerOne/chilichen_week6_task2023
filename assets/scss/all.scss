@@ -1,11 +1,28 @@
+// bs
 @import "../../node_modules/bootstrap/scss/functions";
+
+// font style
+@import './base/font';
+
+// custom
 @import './utils/variables';
 
+// font rwd
+@import './utils/utiltties';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// components
+@import './components/button';
 
+// layout
+@import './layout/header';
+@import './layout/recent';
+@import './layout/marquee';
 
-@import './pages/index.scss';
+//icofont
+@import './utils/icofont/icofont.min.css';
 
+//page
+@import './pages/index';
+
+// bs
 @import "../../node_modules/bootstrap";

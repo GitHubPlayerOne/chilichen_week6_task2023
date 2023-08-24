@@ -1,0 +1,26 @@
+$utilities: (
+    "font-size": (
+        // rfs: true,
+        responsive: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes
+    ),
+);
+
+// rotate
+.rotate-left-3 {
+    transform: translate(-50%,-50%) rotate(-3deg);
+}
+
+.rotate-left-4 {
+    transform: translate(-50%,-50%) rotate(-4deg);
+}
+
+.rotate-left-2 {
+    transform: rotate(-2deg);
+}
+
+.rotate-right-2 {
+    transform: rotate(2deg);
+}

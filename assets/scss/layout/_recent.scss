@@ -1,0 +1,17 @@
+.card-body {
+    img {
+        height: 210px;
+        object-fit: cover;
+        @media (min-width: 768px) {
+            height: 255px;
+        }
+    }
+}
+
+.card-class-icon {
+    width: min(20px, 100%);
+    aspect-ratio: 1 / 1;
+    @media (min-width: 768px) {
+    width: min(24px, 100%);
+    }
+}

@@ -1,0 +1,17 @@
+.btn.hover-secondary {
+    &:hover {
+        color: $primary;
+    }
+}
+
+// tag hover
+.border.tag {
+    border-left-width: 4px !important;
+    transition: all .3s;
+    &:hover {
+        background: $secondary;
+        color: $white;
+        border-left-color: $primary !important;
+    }
+}
+
