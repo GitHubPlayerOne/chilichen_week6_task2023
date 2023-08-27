@@ -8,6 +8,8 @@
   <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>7TAO 活動訂票網 | 首頁</title>
 </head>
 
@@ -56,36 +58,36 @@
       <!-- explore -->
       <ul class="row gx-2 gx-md-7 list-unstyled mb-9 mb-lg-13">
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center">
+          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down">
             <img src="../assets/images/cate01.svg" alt="活動項目-演出">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">演出</p>
           </div>
         </li>
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center">
+          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="50">
             <img src="../assets/images/cate02.svg" alt="活動項目-聯誼">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">聯誼</p>
           </div>
         </li>
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center">
+          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="100">
             <img src="../assets/images/cate03.svg" alt="活動項目-展覽">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">展覽</p>
           </div>
         </li>
         <li class="explore col-4 col-lg-2">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center">
+          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="150">
             <img src="../assets/images/cate04.svg" alt="活動項目-美食">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">美食</p>
           </div>
         </li>
         <li class="explore col-4 col-lg-2">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center">
+          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="200">
             <img src="../assets/images/cate05.svg" alt="活動項目-戶外">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">戶外</p>
           </div>
         </li>
-        <li class="col-4 col-lg-2 d-flex">
+        <li class="col-4 col-lg-2 d-flex" data-aos="fade-down" data-aos-delay="250">
           <a href="./event.html"
             class="text-primary noto-sans-serif fs-5 fs-md-3 border-2 bg-secondary d-flex justify-content-center align-items-center flex-grow-1">
             <p>探索<br>更多</p>
@@ -134,7 +136,7 @@
     <%- include('./layout/marquee'); -%>
       <div class="container">
         <div class="albums row gap-7 gap-md-0 mt-lg-10 mt-7 mb-lg-14 mb-12 justify-content-center">
-          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0">
+          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0" data-aos="flip-left">
             <div class="card p-3 position-relative flex-grow-1 p-lg-5 border border-2 border-secondary">
               <span
                 class="position-absolute top-0 start-50 px-5 py-2 bg-white noto-sans-serif rotate-left-4">社群活動</span>
@@ -144,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0">
+          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0" data-aos="flip-right" data-aos-delay="50">
             <div class="card p-3 position-relative flex-grow-1 p-lg-5 border border-2 border-secondary rotate-right-2">
               <span
                 class="position-absolute top-0 start-50 px-5 py-2 bg-white noto-sans-serif rotate-left-3">藝文活動</span>
@@ -154,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column">
+          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column" data-aos="flip-left" data-aos-delay="100">
             <div class="card p-3 position-relative flex-grow-1 p-lg-5 border border-2 border-secondary rotate-left-2">
               <span
                 class="position-absolute top-0 start-50 px-5 py-2 bg-white noto-sans-serif rotate-left-4">自我覺察</span>
@@ -164,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column">
+          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column" data-aos="flip-right" data-aos-delay="150">
             <div class="card p-3 position-relative flex-grow-1 p-lg-5 border border-2 border-secondary rotate-right-2">
               <span
                 class="position-absolute top-0 start-50 px-5 py-2 bg-white noto-sans-serif rotate-left-4">聯誼活動</span>
@@ -219,8 +221,8 @@
         </div>
         </div>
         <div class="container-fluid noto-sans-serif py-13 py-lg-14 border-top border-2 border-secondary">
-          <p class="text-center fs-8 fs-lg-4 mb-3 mb-lg-5">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-          <p class="text-center fs-10 fs-lg-8">——我也不知道誰說的</p>
+          <p class="text-center fs-8 fs-lg-4 mb-3 mb-lg-5" data-aos="fade-up">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+          <p class="text-center fs-10 fs-lg-8" data-aos="fade-up" data-aos-delay="50">——我也不知道誰說的</p>
         </div>
         <%- include('./layout/footer'); -%>
 
@@ -243,6 +245,11 @@
                 disableOnInteraction: false
               }
             });
+          </script>
+          <!-- AOS -->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
           </script>
           <script type="module" src="../main.js"></script>
 </body>
