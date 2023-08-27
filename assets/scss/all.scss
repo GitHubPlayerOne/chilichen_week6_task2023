@@ -12,6 +12,7 @@
 
 // components
 @import './components/button';
+@import './components/line';
 
 // layout
 @import './layout/header';
@@ -23,6 +24,8 @@
 
 //page
 @import './pages/index';
+@import './pages/activity';
+@import './pages/order';
 
 // bs
 @import "../../node_modules/bootstrap";

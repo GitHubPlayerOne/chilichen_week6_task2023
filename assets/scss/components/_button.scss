@@ -15,3 +15,29 @@
     }
 }
 
+// circle
+.circle-hover {
+    position: relative;
+    &:hover::before {
+        display: block;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: none;
+        left: -10px;
+        top: -4px;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        background: $primary;
+        z-index: -1;
+    }
+}
+
+.underline-hover {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+

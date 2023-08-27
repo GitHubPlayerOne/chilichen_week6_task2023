@@ -304,7 +304,8 @@ $primary:       #FBFF22 !default; //*custom
 // $secondary:     $gray-600 !default;
 $secondary:     #030303 !default; //*custom
 $success:       $green !default;
-$info:          $cyan !default;
+// $info:          $cyan !default;
+$info:          #EBEAE8 !default; //*custom
 $warning:       $yellow !default;
 // $danger:        $red !default;
 $danger:        #C96464 !default; //*custom
@@ -932,7 +933,8 @@ $form-check-input-focus-border:           $input-focus-border-color !default;
 $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color:          $component-active-color !default;
-$form-check-input-checked-bg-color:       $component-active-bg !default;
+// $form-check-input-checked-bg-color:       $component-active-bg !default;
+$form-check-input-checked-bg-color:       $secondary !default; //*custom
 $form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
@@ -1243,11 +1245,13 @@ $pagination-padding-x-lg:           1.5rem !default;
 $pagination-font-size:              $font-size-base !default;
 
 $pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     $white !default;
+// $pagination-bg:                     $white !default;
+$pagination-bg:                     transparent !default; //*custom
 $pagination-border-radius:          $border-radius !default;
 $pagination-border-width:           $border-width !default;
 $pagination-margin-start:           ($pagination-border-width * -1) !default;
-$pagination-border-color:           $gray-300 !default;
+// $pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $secondary !default; //*custom
 
 $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg:               $gray-200 !default;
@@ -1256,10 +1260,13 @@ $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+// $pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-border-color:     $secondary !default; //*custom
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+// $pagination-active-color:           $component-active-color !default;
+$pagination-active-color:           $primary !default; //*custom
+// $pagination-active-bg:              $component-active-bg !default;
+$pagination-active-bg:              $secondary !default; //*custom
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;

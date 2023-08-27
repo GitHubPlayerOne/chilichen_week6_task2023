@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>7TAO 活動訂票網 | 訂單確認</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="row my-7 mt-lg-14 mb-lg-13 justify-content-center">
+
+                <ol class="col-lg-6 list-unstyled d-flex justify-content-between order-item position-relative">
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6 text-primary bg-secondary">1</span>
+                        <p class="noto-sans-serif">訂單確認</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6">2</span>
+                        <p class="noto-sans-serif">結帳付款</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6">3</span>
+                        <p class="noto-sans-serif">訂購結果</p>
+                    </li>
+                </ol>
+            </div>
+            <!-- order-content -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <table class="table">
+                        <thead>
+                            <h2 class="fs-4 fs-lg-3 mb-7 mb-lg-9 noto-sans-serif text-lg-center text-start">返老還童-制服聯誼
+                            </h2>
+                        </thead>
+                        <tbody>
+                            <tr class="border-secondary border-2 border-top">
+                                <th scope="row" class="border-secondary border-bottom border-1 noto-sans-serif">日期</th>
+                                <td class="border-secondary border-bottom border-1 noto-sans-tc text-end">2023/5/12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-secondary border-bottom border-1 noto-sans-serif">票種</th>
+                                <td class="border-secondary border-bottom border-1 noto-sans-tc text-end">改頭換面票（含大改造）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-secondary border-bottom border-1 noto-sans-serif">票價</th>
+                                <td class="border-secondary border-bottom border-1 noto-sans-tc text-end">$8000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-9 mt-lg-13">
+                <div class="col-lg-6">
+                    <img src="../assets/images/sparkler.png" class="d-block m-auto" width="32px" height="32px"
+                        alt="icon">
+                    <h3 class="fs-5 my-5 noto-sans-serif text-center">聯絡人資料</h3>
+                    <form class="mb-13 mb-lg-14">
+                        <div class="mb-5">
+                            <label for="orderName" class="form-label noto-sans-tc">聯絡人姓名</label>
+                            <input type="text" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
+                                placeholder="請輸入聯絡人名稱">
+                        </div>
+                        <div class="mb-5">
+                            <label for="orderEmail" class="form-label noto-sans-tc">Email</label>
+                            <input type="email" class="form-control border-secondary fs-7 py-2 px-5" id="orderEmail"
+                                aria-describedby="emailHelp" placeholder="請輸入Email">
+                        </div>
+                        <div class="mb-lg-9 mb-7">
+                            <label class="form-label noto-sans-tc" for="orderPhone">手機</label>
+                            <input type="tel" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
+                                placeholder="請輸入手機號碼">
+                        </div>
+                        <a href="./pay.html" type="submit"
+                            class="btn btn-secondary py-2 col-12 col-lg-8 m-auto d-block hover-secondary fs-7">確認表單資料
+                            &raquo;</a>
+
+
+                        <a href="" class="fs-8 d-block mt-5 text-center text-muted">取消購票</a>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

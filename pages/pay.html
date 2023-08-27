@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO 活動訂票網 | 結帳付款</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="row my-7 mt-lg-14 mb-lg-13 justify-content-center">
+
+                <ol class="col-lg-6 list-unstyled d-flex justify-content-between order-item position-relative">
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6 text-primary bg-secondary"><i
+                                class="icofont-verification-check"></i></span>
+                        <p class="noto-sans-serif">訂單確認</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6 text-primary bg-secondary">2</span>
+                        <p class="noto-sans-serif">結帳付款</p>
+                    </li>
+                    <li class="d-flex flex-column align-items-center gap-1 gap-lg-2">
+                        <span
+                            class="d-block text-center border border-secondary border-1 py-1 py-lg-3 px-3 px-lg-6">3</span>
+                        <p class="noto-sans-serif">訂購結果</p>
+                    </li>
+                </ol>
+            </div>
+            <!-- order-content -->
+            <div class="row justify-content-center">
+                <h2 class="fs-4 fs-lg-3 mb-7 mb-lg-9 noto-sans-serif text-lg-center text-start">返老還童-制服聯誼
+                </h2>
+                <div class="col-lg-7 col-12 mb-7 mb-lg-9">
+                    <p class="p-2 px-lg-3 bg-secondary text-primary text-center"><strong
+                            class="noto-sans-tc fw-normal">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <table class="table">
+                        <tbody>
+                            <tr class="border-secondary border-2 border-top">
+                                <th scope="row" class="border-secondary border-bottom border-1 noto-sans-serif">訂單編號
+                                </th>
+                                <td class="border-secondary border-bottom border-1 noto-sans-tc text-end">892746123</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-secondary border-bottom border-1 noto-sans-serif">票券</th>
+                                <td class="border-secondary border-bottom border-1 noto-sans-tc text-end">
+                                    改頭換面票（含大改造）$8000
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-9 mt-lg-13">
+                <div class="col-lg-6">
+                    <img src="../assets/images/sparkler.png" class="d-block m-auto" width="32px" height="32px"
+                        alt="icon">
+                    <h3 class="fs-5 my-5 noto-sans-serif text-center">結帳資訊</h3>
+                    <form class="mb-13 mb-lg-14">
+                        <div class="mb-5">
+                            <label for="orderName" class="form-label noto-sans-tc">取票資訊</label>
+                            <input type="text" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
+                                placeholder="請輸入身分證字號或護照號碼">
+                            <div id="passwordHelpBlock" class="form-text fs-lg-9">
+                                請輸入您的 <strong class="text-danger fw-normal">身分證字號</strong> 供取票使用，外籍人士請輸入 <strong
+                                    class="text-danger fw-normal">護照號碼</strong>
+                            </div>
+                        </div>
+                        <div class="mb-7 mb-lg-9 d-flex flex-column gap-2">
+                            <p>付款方式</p>
+                            <div class="form-check">
+                                <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault"
+                                    id="payCard">
+                                <label class="form-check-label" for="payCard">
+                                    信用卡
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault"
+                                    id="payATM">
+                                <label class="form-check-label" for="payATM">
+                                    ATM虛擬帳號
+                                </label>
+                            </div>
+                        </div>
+
+                        <a href="./checkout.html" type="submit"
+                            class="btn btn-secondary py-2 col-12 col-lg-8 m-auto d-block hover-secondary fs-7 noto-sans-tc">確認訂單並繳費 $8000
+                            &raquo;</a>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

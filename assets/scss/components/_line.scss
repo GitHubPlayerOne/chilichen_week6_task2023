@@ -1,0 +1,9 @@
+.line-base {
+    height: 50px;
+    width: 2px;
+    background: $secondary;
+    transform: rotate(20deg);
+    @media (min-width: 992px) {
+        height: 100px;
+    }
+}

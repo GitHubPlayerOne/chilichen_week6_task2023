@@ -1,0 +1,19 @@
+.order-item {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        display: inline-block;
+        width: 80%;
+        height: 1px;
+        background: $secondary;
+        margin: auto;
+        z-index: -1;
+    }
+
+    span {
+        background: #f3f1e5;
+    }
+}
