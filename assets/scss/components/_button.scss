@@ -41,3 +41,8 @@
     }
 }
 
+.opacity-hover {
+    &:hover {
+        opacity: .7 !important;
+    }
+}

@@ -63,21 +63,30 @@
                     <img src="../assets/images/sparkler.png" class="d-block m-auto" width="32px" height="32px"
                         alt="icon">
                     <h3 class="fs-5 my-5 noto-sans-serif text-center">聯絡人資料</h3>
-                    <form class="mb-13 mb-lg-14">
+                    <form class="mb-13 mb-lg-14 needs-validation" novalidate>
                         <div class="mb-5">
                             <label for="orderName" class="form-label noto-sans-tc">聯絡人姓名</label>
                             <input type="text" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
-                                placeholder="請輸入聯絡人名稱">
+                                placeholder="請輸入聯絡人名稱" required>
+                            <div class="invalid-feedback">
+                                請輸入姓名
+                            </div>
                         </div>
                         <div class="mb-5">
                             <label for="orderEmail" class="form-label noto-sans-tc">Email</label>
                             <input type="email" class="form-control border-secondary fs-7 py-2 px-5" id="orderEmail"
-                                aria-describedby="emailHelp" placeholder="請輸入Email">
+                                aria-describedby="emailHelp" placeholder="請輸入Email" required>
+                            <div class="invalid-feedback">
+                                請輸入Email
+                            </div>
                         </div>
                         <div class="mb-lg-9 mb-7">
                             <label class="form-label noto-sans-tc" for="orderPhone">手機</label>
                             <input type="tel" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
-                                placeholder="請輸入手機號碼">
+                                placeholder="請輸入手機號碼" required>
+                            <div class="invalid-feedback">
+                                請輸入手機號碼
+                            </div>
                         </div>
                         <a href="./pay.html" type="submit"
                             class="btn btn-secondary py-2 col-12 col-lg-8 m-auto d-block hover-secondary fs-7">確認表單資料

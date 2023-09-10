@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <title>7TAO 活動訂票網 | 結帳付款</title>
 </head>
 
@@ -64,11 +65,14 @@
                     <img src="../assets/images/sparkler.png" class="d-block m-auto" width="32px" height="32px"
                         alt="icon">
                     <h3 class="fs-5 my-5 noto-sans-serif text-center">結帳資訊</h3>
-                    <form class="mb-13 mb-lg-14">
+                    <form class="mb-13 mb-lg-14 needs-validation" novalidate>
                         <div class="mb-5">
                             <label for="orderName" class="form-label noto-sans-tc">取票資訊</label>
                             <input type="text" class="form-control border-secondary fs-7 py-2 px-5" id="orderName"
-                                placeholder="請輸入身分證字號或護照號碼">
+                                placeholder="請輸入身分證字號或護照號碼" required>
+                            <div class="invalid-feedback">
+                                請輸入身分證字號或護照號碼
+                            </div>
                             <div id="passwordHelpBlock" class="form-text fs-lg-9">
                                 請輸入您的 <strong class="text-danger fw-normal">身分證字號</strong> 供取票使用，外籍人士請輸入 <strong
                                     class="text-danger fw-normal">護照號碼</strong>
@@ -93,7 +97,8 @@
                         </div>
 
                         <a href="./checkout.html" type="submit"
-                            class="btn btn-secondary py-2 col-12 col-lg-8 m-auto d-block hover-secondary fs-7 noto-sans-tc">確認訂單並繳費 $8000
+                            class="btn btn-secondary py-2 col-12 col-lg-8 m-auto d-block hover-secondary fs-7 noto-sans-tc">確認訂單並繳費
+                            $8000
                             &raquo;</a>
 
                     </form>
