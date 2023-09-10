@@ -11,8 +11,8 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>7TAO 活動訂票網 | 首頁</title>
-  <script type="module" crossorigin src="/week6_task2023/assets/main-bb4119fa.js"></script>
-  <link rel="stylesheet" href="/week6_task2023/assets/main-77051f14.css">
+  <script type="module" crossorigin src="/week6_task2023/assets/main-2385f663.js"></script>
+  <link rel="stylesheet" href="/week6_task2023/assets/main-54a91f26.css">
 </head>
 
 <body>
@@ -37,7 +37,8 @@
         </div>
 
         <div class="d-none d-md-flex gap-7">
-            <a href="" class="d-flex align-items-center gap-1 link-hover fs-8"><i
+            <a href="" class="d-flex align-items-center gap-1 link-hover fs-8" data-bs-toggle="modal"
+            data-bs-target="#joinMember"><i
                     class="icofont-ui-file fs-8"></i>REGISTER</a>
             <a href="./login.html" class="d-flex align-items-center gap-1 link-hover fs-8"><i class="icofont-ui-user fs-8"></i>LOGIN</a>
         </div>
@@ -105,38 +106,43 @@
       <!-- explore -->
       <ul class="row gx-2 gx-md-7 list-unstyled mb-9 mb-lg-13">
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down">
+          <a href="#" class="d-block opacity-hover border border-secondary border-2 py-6 px-10 py-md-10 text-center"
+            data-aos="fade-down">
             <img src="/week6_task2023/assets/cate01-a12495cb.svg" alt="活動項目-演出">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">演出</p>
-          </div>
+          </a>
         </li>
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="50">
+          <a href="#" class="d-block opacity-hover border border-secondary border-2 py-6 px-10 py-md-10 text-center"
+            data-aos="fade-down" data-aos-delay="50">
             <img src="/week6_task2023/assets/cate02-846b8212.svg" alt="活動項目-聯誼">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">聯誼</p>
-          </div>
+          </a>
         </li>
         <li class="explore col-4 col-lg-2 mb-2 mb-lg-0">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="100">
+          <a href="#" class="d-block opacity-hover border border-secondary border-2 py-6 px-10 py-md-10 text-center"
+            data-aos="fade-down" data-aos-delay="100">
             <img src="/week6_task2023/assets/cate03-831ab7b4.svg" alt="活動項目-展覽">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">展覽</p>
-          </div>
+          </a>
         </li>
         <li class="explore col-4 col-lg-2">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="150">
+          <a href="#" class="d-block opacity-hover border border-secondary border-2 py-6 px-10 py-md-10 text-center"
+            data-aos="fade-down" data-aos-delay="150">
             <img src="/week6_task2023/assets/cate04-957f7830.svg" alt="活動項目-美食">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">美食</p>
-          </div>
+          </a>
         </li>
         <li class="explore col-4 col-lg-2">
-          <div class="border border-secondary border-2 py-6 px-10 py-md-10 text-center" data-aos="fade-down" data-aos-delay="200">
+          <a href="#" class="d-block opacity-hover border border-secondary border-2 py-6 px-10 py-md-10 text-center"
+            data-aos="fade-down" data-aos-delay="200">
             <img src="/week6_task2023/assets/cate05-72eeca47.svg" alt="活動項目-戶外">
             <p class="fs-md-5 noto-sans-serif text-center mt-2 mt-md-3">戶外</p>
-          </div>
+          </a>
         </li>
         <li class="col-4 col-lg-2 d-flex" data-aos="fade-down" data-aos-delay="250">
           <a href="./event.html"
-            class="text-primary noto-sans-serif fs-5 fs-md-3 border-2 bg-secondary d-flex justify-content-center align-items-center flex-grow-1">
+            class="text-primary opacity-hover noto-sans-serif fs-5 fs-md-3 border-2 bg-secondary d-flex justify-content-center align-items-center flex-grow-1">
             <p>探索<br>更多</p>
           </a>
         </li>
@@ -272,7 +278,7 @@
 
 <div class="modal fade" id="joinMember" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
+        <div class="modal-content border border-3 border-secondary">
             <div class="modal-header border-secondary border-3 border-bottom">
                 <h5 class="modal-title noto-sans-serif mx-auto fs-5" id="exampleModalLabel">立刻成為7TAO會員</h5>
                 <button type="button" class="btn-close ms-0 text-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -295,8 +301,12 @@
           <p class="fs-lg-4 noto-sans-serif">線上活動</p>
         </div>
         <div class="row online gap-3 gap-lg-0 mb-lg-14 mb-9">
-          <div class="col-lg-7"><img src="/week6_task2023/assets/online-fe4a9a77.jpg" class="img-fluid" alt="切特居批踢"></div>
-          <div class="col-lg-5 gap-3 d-flex flex-column justify-content-between">
+          <div class="col-lg-7">
+            <div class="h-100 online-bg">
+              <!-- <img src="../assets/images/event/online.jpg" class="img-fluid" alt="切特居批踢"> -->
+            </div>
+          </div>
+          <div class="col-lg-5 gap-3 gap-lg-9 d-flex flex-column justify-content-between">
             <div class="d-flex flex-column gap-2 gap-lg-5">
               <h3 class="noto-sans-serif fs-8 fs-lg-4">切特居批踢</h3>
               <ul class="d-flex gap-2 list-unstyled mb-0">
@@ -316,7 +326,8 @@
               <p class="noto-sans-tc">這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。</p>
               <p class="noto-sans-tc">該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
             </div>
-            <a href="" class="btn btn-secondary fs-lg-7 text-center noto-sans-tc py-5 py-lg-2 hover-secondary">查看活動詳情 &raquo;</a>
+            <a href="" class="btn btn-secondary fs-lg-7 text-center noto-sans-tc py-5 py-lg-2 hover-secondary">查看活動詳情
+              &raquo;</a>
           </div>
         </div>
     </div>
@@ -346,7 +357,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0" data-aos="flip-right" data-aos-delay="50">
+          <div class="col-lg-3 col-md-6 col-10 d-flex flex-column mb-md-7 mb-lg-0" data-aos="flip-right"
+            data-aos-delay="50">
             <div class="card p-3 position-relative flex-grow-1 p-lg-5 border border-2 border-secondary rotate-right-2">
               <span
                 class="position-absolute top-0 start-50 px-5 py-2 bg-white noto-sans-serif rotate-left-3">藝文活動</span>
@@ -405,15 +417,18 @@
                     追蹤我們的社群吧！<br>
                     也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
                   <ul class="list-unstyled d-flex flex-column gap-5 mb-0">
-                    <li><a href="mailto:7tao.event@gmail.com" class="d-flex align-items-center"><i class="p-2 bg-secondary text-white me-5 icofont-ui-email"></i>7tao.event@gmail.com</a></li>
-                    <li><a href="tel:+886-9123123123" class="d-flex align-items-center"><i class="p-2 bg-secondary text-white me-5 icofont-phone"></i>09123123123</a></li>
-                    <li><a href="#" class="d-flex align-items-center"><i class="p-2 bg-secondary text-white me-5 icofont-facebook"></i>7TAO七逃</a></li>
+                    <li><a href="mailto:7tao.event@gmail.com" class="opacity-hover d-flex align-items-center"><i
+                          class="p-2 bg-secondary text-white me-5 icofont-ui-email"></i>7tao.event@gmail.com</a></li>
+                    <li><a href="tel:+886-9123123123" class="opacity-hover d-flex align-items-center"><i
+                          class="p-2 bg-secondary text-white me-5 icofont-phone"></i>09123123123</a></li>
+                    <li><a href="#" class="opacity-hover d-flex align-items-center"><i
+                          class="p-2 bg-secondary text-white me-5 icofont-facebook"></i>7TAO七逃</a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-6 gx-0 d-flex">
-              <div class="card border border-2 border-secondary flex-grow-1">
+              <div class="card border border-2 border-secondary border-start-2 border-start-lg-0 flex-grow-1">
                 <div
                   class="card-header text-uppercase bg-transparent border-bottom border-2 border-secondary fs-5 fs-lg-4 noto-sans-serif">
                   #subscribe us
@@ -422,9 +437,12 @@
                   <p class="card-text mb-5 mb-lg-9">訂閱電子報送折價券！<br>
                     定期精選文章資訊及最新優惠資訊，<br>
                     還不通通給我訂閱起來？</p>
-                  <form action="">
-                    <input type="email" class="form-control noto-sans-tc border-secondary px-lg-7 py-lg-5" id="exampleFormControlInput1"
-                      placeholder="輸入Email">
+                  <form action="" class="needs-validation" novalidate>
+                    <input type="email" class="form-control noto-sans-tc border-secondary px-lg-7 py-lg-5"
+                      id="exampleFormControlInput1" placeholder="輸入Email" required>
+                    <div class="invalid-feedback">
+                      請輸入Email
+                    </div>
                 </div>
                 </form>
                 <a href="#" class="btn btn-secondary py-5 py-lg-2 fs-lg-7 hover-secondary">確認訂閱 &raquo;</a>
